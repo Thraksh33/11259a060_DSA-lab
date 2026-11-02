@@ -11,7 +11,6 @@ void enqueue(int id)
         printf("Queue is Full! Cannot enqueue Student ID %d\n", id);
         return;
     }
-    //Inserting the first element
     if (front == -1)
         front = 0;
     queue[++rear] = id;
