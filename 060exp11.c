@@ -12,7 +12,7 @@ void bubbleSort(int arr[], int n)
     for (int i = 0; i < n - 1; i++)
         for (int j = 0; j < n - 1 - i; j++)
             if (arr[j] < arr[j + 1])
-            { /* descending: highest marks first */
+            { 
                 int t = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = t;
@@ -60,7 +60,6 @@ void heapSort(int arr[], int n)
         arr[i] = t;
         heapify(arr, i, 0);
     }
-    /* heapSort produces ascending order; reverse for descending merit list */
     for (int i = 0; i < n / 2; i++)
     {
         int t = arr[i];
